@@ -1,0 +1,24 @@
+.inlogg{
+	margin:0 auto;
+	width:300px;
+	text-align:center;
+}
+.input{
+display: block;
+margin: 10px auto;
+}
+
+.passw{
+	display:block; 
+	margin: 10px auto;
+}
+.register-text{
+	text-align: center;
+	margin-top: 20px;
+}
+.register-link{
+	text-decoration: none;
+	color: #1468d6;
+	font-weight: bold;
+	cursor:pointer;
+}

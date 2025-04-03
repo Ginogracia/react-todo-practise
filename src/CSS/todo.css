@@ -1,0 +1,259 @@
+body {
+    overflow-x:hidden
+}
+
+.todo-page {
+    height: 100vh;
+    width: 100vw;
+    max-width: 100%;
+    background-color: rgb(245, 245, 245);
+    margin: 0;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.task-section {
+    height: 550px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.task-list {
+    background-color: rgb(48, 48, 48);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 90%;
+    gap: 5px;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: relative; 
+    border-radius: 10px 0px 0px 0px;
+}
+
+.task {
+    height: 50px;
+    background-color: aliceblue;
+    width: 98%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.task-title {
+    color: black;
+    margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.add-task-section {
+    width: 100%;
+    bottom: 0;
+    height: 50px;
+    display: flex;
+    position: relative;
+}
+
+.task-title-input {
+    height: 48px;
+    width: 396px;
+    border: none;  
+    background-color: rgb(79, 78, 78);
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.add-task-button {
+    color: white;
+    width: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    justify-content: center;
+    font-size: 18px;
+    right: 0;
+    height: 50px;
+    background-color: rgb(49, 67, 138);
+    cursor: pointer;
+    margin: 0;
+    transition: 0.2s;
+    border: none;
+    border-radius: 0px 0px 10px 0px;
+}
+
+.add-task-button:hover {
+    background-color: rgb(32, 43, 90);
+    transition: 0.2s;
+}
+
+
+.checkbox-wrapper-19 {
+    box-sizing: border-box;
+    --background-color: #fff;
+    --checkbox-height: 20px;
+    position: absolute;
+    right: 0;
+    margin-right: 15px;
+    margin-top: 3px;
+  }
+
+  @-moz-keyframes dothabottomcheck-19 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) / 2);
+    }
+  }
+
+  @-webkit-keyframes dothabottomcheck-19 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) / 2);
+    }
+  }
+
+  @keyframes dothabottomcheck-19 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) / 2);
+    }
+  }
+
+  @keyframes dothatopcheck-19 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) * 1.2);
+    }
+  }
+
+  @-webkit-keyframes dothatopcheck-19 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) * 1.2);
+    }
+  }
+
+  @-moz-keyframes dothatopcheck-19 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) * 1.2);
+    }
+  }
+
+  .checkbox-wrapper-19 input[type=checkbox] {
+    display: none;
+  }
+
+  .checkbox-wrapper-19 .check-box {
+    height: var(--checkbox-height);
+    width: var(--checkbox-height);
+    background-color: transparent;
+    border: calc(var(--checkbox-height) * .1) solid #000;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: border-color ease 0.2s;
+    -o-transition: border-color ease 0.2s;
+    -webkit-transition: border-color ease 0.2s;
+    transition: border-color ease 0.2s;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-19 .check-box::before,
+  .checkbox-wrapper-19 .check-box::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    height: 0;
+    width: calc(var(--checkbox-height) * .2);
+    background-color: #34b93d;
+    display: inline-block;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    border-radius: 5px;
+    content: " ";
+    -webkit-transition: opacity ease 0.5;
+    -moz-transition: opacity ease 0.5;
+    transition: opacity ease 0.5;
+  }
+  .checkbox-wrapper-19 .check-box::before {
+    top: calc(var(--checkbox-height) * .72);
+    left: calc(var(--checkbox-height) * .41);
+    box-shadow: 0 0 0 calc(var(--checkbox-height) * .05) var(--background-color);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .checkbox-wrapper-19 .check-box::after {
+    top: calc(var(--checkbox-height) * .37);
+    left: calc(var(--checkbox-height) * .05);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .checkbox-wrapper-19 input[type=checkbox]:checked + .check-box,
+  .checkbox-wrapper-19 .check-box.checked {
+    border-color: #34b93d;
+  }
+  .checkbox-wrapper-19 input[type=checkbox]:checked + .check-box::after,
+  .checkbox-wrapper-19 .check-box.checked::after {
+    height: calc(var(--checkbox-height) / 2);
+    -moz-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+    -o-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+    -webkit-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+    animation: dothabottomcheck-19 0.2s ease 0s forwards;
+  }
+  .checkbox-wrapper-19 input[type=checkbox]:checked + .check-box::before,
+  .checkbox-wrapper-19 .check-box.checked::before {
+    height: calc(var(--checkbox-height) * 1.2);
+    -moz-animation: dothatopcheck-19 0.4s ease 0s forwards;
+    -o-animation: dothatopcheck-19 0.4s ease 0s forwards;
+    -webkit-animation: dothatopcheck-19 0.4s ease 0s forwards;
+    animation: dothatopcheck-19 0.4s ease 0s forwards;
+  }
